@@ -1,17 +1,31 @@
-# React + Vite
+# todo-26
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The reference to-do app for **Technical Interaction Design**, ITU, Autumn 2026 — built
+live, in the lectures. Your team forks it in week 3.
 
-Currently, two official plugins are available:
+## One tag per lecture
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+git clone https://github.com/itu-tid/todo-26.git
+cd todo-26
+npm install
+npm run dev
+```
 
-## React Compiler
+`git tag` lists what exists so far, and each tag is the app as it stood at the end of that
+lecture:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+git checkout week-01     # the app at the end of lecture 1
+git checkout main        # back to the latest
+```
 
-## Expanding the ESLint configuration
+The commits inside a week are the live coding as it happened, warts and dead ends
+included. The **tag** is applied afterwards, once it has been tidied — so the commits show
+you the process and the tag shows you the version worth reading.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# ToDoList
+## The notes
+
+Written up at [itu-tid.github.io](https://github.com/itu-tid/itu-tid.github.io#readme),
+with each week also bundled as a PDF at
+[itu-tid.github.io/lecture-notes-pdf](https://itu-tid.github.io/lecture-notes-pdf/).
