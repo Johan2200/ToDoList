@@ -34,7 +34,7 @@ export default function ToDoList({ firstName }) {
   }
 
   return (
-    <>
+    <div className="list">
       <h1>To Do List for {firstName}</h1>
 
       <NewTodoForm onAdd={handleAdd} />
@@ -53,6 +53,6 @@ export default function ToDoList({ firstName }) {
           ))}
         </ul>
       )}
-    </>
+    </div>
   );
 }
