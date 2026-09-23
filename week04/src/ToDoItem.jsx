@@ -8,7 +8,11 @@ export default function ToDoItem({ todo, onToggle, onRemove }) {
       />
 
       <span>{todo.text}</span>
-      <button type="button" onClick={() => onRemove(todo.id)}>
+      <button
+        className="button"
+        type="button"
+        onClick={() => onRemove(todo.id)}
+      >
         Delete
       </button>
     </li>

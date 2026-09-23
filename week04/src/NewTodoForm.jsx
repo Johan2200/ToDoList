@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./styling/Button.css";
 
 export default function NewTodoForm({ onAdd }) {
   const [text, setText] = useState("");
@@ -16,7 +17,9 @@ export default function NewTodoForm({ onAdd }) {
         onChange={(e) => setText(e.target.value)}
         placeholder="New task"
       />
-      <button disabled={text.trim().length === 0}>Add</button>
+      <button className="button" disabled={text.trim().length === 0}>
+        Add
+      </button>
     </form>
   );
 }
