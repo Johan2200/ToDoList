@@ -10,20 +10,20 @@ function App() {
 
   Parse.serverURL = "https://parseapi.back4app.com";
 
-  const annasToDoList = [
-    { id: "anna-1", text: "Call the landlord", done: false },
-    { id: "anna-2", text: "Book the dentist", done: false },
+  const johansToDoList = [
+    { id: "johan-1", text: "Call the landlord", done: false },
+    { id: "johan-2", text: "Book the dentist", done: false },
   ];
 
-  const konstantinaToDoList = [
-    { id: "konstantina-1", text: "Buy milk", done: false },
-    { id: "konstantina-2", text: "Book the dentist", done: false },
+  const extraToDoList = [
+    { id: "extra-1", text: "Buy milk", done: false },
+    { id: "extra-2", text: "Book the dentist", done: false },
   ];
 
   return (
     <>
-      <ToDoList firstName={"Anna"} todos={annasToDoList} />
-      <ToDoList firstName={"Konstantina"} todos={konstantinaToDoList} />
+      <ToDoList firstName={"Johan"} todos={johansToDoList} />
+      <ToDoList firstName={"Extra"} todos={extraToDoList} />
     </>
   );
 }
